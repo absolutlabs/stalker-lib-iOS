@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72FA7161B2FD4B23BDD35BE8 /* libPods-StalkerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47530370F26E4F8B9EEC4887 /* libPods-StalkerTests.a */; };
+		814D2217192FA51600165853 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D2216192FA51600165853 /* Foundation.framework */; };
+		814D2219192FA51600165853 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D2218192FA51600165853 /* CoreGraphics.framework */; };
+		814D221B192FA51600165853 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D221A192FA51600165853 /* UIKit.framework */; };
+		814D2230192FA51600165853 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D222F192FA51600165853 /* XCTest.framework */; };
+		814D2231192FA51600165853 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D2216192FA51600165853 /* Foundation.framework */; };
+		814D2232192FA51600165853 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D221A192FA51600165853 /* UIKit.framework */; };
+		814D224C192FA5F500165853 /* BPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D2247192FA5F500165853 /* BPAppDelegate.m */; };
+		814D224D192FA5F500165853 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814D2248192FA5F500165853 /* Images.xcassets */; };
+		814D224E192FA5F500165853 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D2249192FA5F500165853 /* main.m */; };
+		814D2256192FA6C800165853 /* StalkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D2253192FA6B900165853 /* StalkerTests.m */; };
+		814D2259192FA86500165853 /* BPStalker.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D2258192FA86500165853 /* BPStalker.m */; };
+		814D225C192FBF2D00165853 /* NSObject+BPStalker.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D225B192FBF2D00165853 /* NSObject+BPStalker.m */; };
+		B04D1EBEA9154D24BDB23C63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A30FF60B814D55A86AF036 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		814D2233192FA51600165853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814D220B192FA51600165853 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814D2212192FA51600165853;
+			remoteInfo = Stalker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28EBD0A2F1BB4B6FA174DDED /* Pods-StalkerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StalkerTests.xcconfig"; path = "Pods/Pods-StalkerTests.xcconfig"; sourceTree = "<group>"; };
+		47530370F26E4F8B9EEC4887 /* libPods-StalkerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StalkerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A30FF60B814D55A86AF036 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		814D2213192FA51600165853 /* Stalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		814D2216192FA51600165853 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		814D2218192FA51600165853 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		814D221A192FA51600165853 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		814D222E192FA51600165853 /* StalkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StalkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		814D222F192FA51600165853 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		814D2246192FA5F500165853 /* BPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAppDelegate.h; sourceTree = "<group>"; };
+		814D2247192FA5F500165853 /* BPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAppDelegate.m; sourceTree = "<group>"; };
+		814D2248192FA5F500165853 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		814D2249192FA5F500165853 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		814D224A192FA5F500165853 /* Stalker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Stalker-Info.plist"; sourceTree = "<group>"; };
+		814D224B192FA5F500165853 /* Stalker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stalker-Prefix.pch"; sourceTree = "<group>"; };
+		814D2252192FA6B900165853 /* StalkerTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StalkerTests-Info.plist"; sourceTree = "<group>"; };
+		814D2253192FA6B900165853 /* StalkerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StalkerTests.m; sourceTree = "<group>"; };
+		814D2257192FA86500165853 /* BPStalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPStalker.h; sourceTree = "<group>"; };
+		814D2258192FA86500165853 /* BPStalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPStalker.m; sourceTree = "<group>"; };
+		814D225A192FBF2D00165853 /* NSObject+BPStalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BPStalker.h"; sourceTree = "<group>"; };
+		814D225B192FBF2D00165853 /* NSObject+BPStalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BPStalker.m"; sourceTree = "<group>"; };
+		A5DF51F498714AE4A6E38C8C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		814D2210192FA51600165853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814D2219192FA51600165853 /* CoreGraphics.framework in Frameworks */,
+				814D221B192FA51600165853 /* UIKit.framework in Frameworks */,
+				814D2217192FA51600165853 /* Foundation.framework in Frameworks */,
+				B04D1EBEA9154D24BDB23C63 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814D222B192FA51600165853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814D2230192FA51600165853 /* XCTest.framework in Frameworks */,
+				814D2232192FA51600165853 /* UIKit.framework in Frameworks */,
+				814D2231192FA51600165853 /* Foundation.framework in Frameworks */,
+				72FA7161B2FD4B23BDD35BE8 /* libPods-StalkerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		814D220A192FA51600165853 = {
+			isa = PBXGroup;
+			children = (
+				814D2251192FA6B900165853 /* Specs */,
+				814D2250192FA67A00165853 /* Stalker */,
+				814D2245192FA5F500165853 /* Demo */,
+				814D2215192FA51600165853 /* Frameworks */,
+				814D2214192FA51600165853 /* Products */,
+				A5DF51F498714AE4A6E38C8C /* Pods.xcconfig */,
+				28EBD0A2F1BB4B6FA174DDED /* Pods-StalkerTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		814D2214192FA51600165853 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814D2213192FA51600165853 /* Stalker.app */,
+				814D222E192FA51600165853 /* StalkerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		814D2215192FA51600165853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				814D2216192FA51600165853 /* Foundation.framework */,
+				814D2218192FA51600165853 /* CoreGraphics.framework */,
+				814D221A192FA51600165853 /* UIKit.framework */,
+				814D222F192FA51600165853 /* XCTest.framework */,
+				56A30FF60B814D55A86AF036 /* libPods.a */,
+				47530370F26E4F8B9EEC4887 /* libPods-StalkerTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		814D2245192FA5F500165853 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				814D2246192FA5F500165853 /* BPAppDelegate.h */,
+				814D2247192FA5F500165853 /* BPAppDelegate.m */,
+				814D2248192FA5F500165853 /* Images.xcassets */,
+				814D2249192FA5F500165853 /* main.m */,
+				814D224A192FA5F500165853 /* Stalker-Info.plist */,
+				814D224B192FA5F500165853 /* Stalker-Prefix.pch */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		814D2250192FA67A00165853 /* Stalker */ = {
+			isa = PBXGroup;
+			children = (
+				814D2257192FA86500165853 /* BPStalker.h */,
+				814D2258192FA86500165853 /* BPStalker.m */,
+				814D225A192FBF2D00165853 /* NSObject+BPStalker.h */,
+				814D225B192FBF2D00165853 /* NSObject+BPStalker.m */,
+			);
+			path = Stalker;
+			sourceTree = "<group>";
+		};
+		814D2251192FA6B900165853 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				814D2252192FA6B900165853 /* StalkerTests-Info.plist */,
+				814D2253192FA6B900165853 /* StalkerTests.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		814D2212192FA51600165853 /* Stalker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814D223F192FA51600165853 /* Build configuration list for PBXNativeTarget "Stalker" */;
+			buildPhases = (
+				A7A6403C0AFF451696E42D3A /* Check Pods Manifest.lock */,
+				814D220F192FA51600165853 /* Sources */,
+				814D2210192FA51600165853 /* Frameworks */,
+				814D2211192FA51600165853 /* Resources */,
+				A1DC71C4FC8D49A297705ABE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stalker;
+			productName = Stalker;
+			productReference = 814D2213192FA51600165853 /* Stalker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		814D222D192FA51600165853 /* StalkerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814D2242192FA51600165853 /* Build configuration list for PBXNativeTarget "StalkerTests" */;
+			buildPhases = (
+				0DAE0660B1464F378EAFD20F /* Check Pods Manifest.lock */,
+				814D222A192FA51600165853 /* Sources */,
+				814D222B192FA51600165853 /* Frameworks */,
+				814D222C192FA51600165853 /* Resources */,
+				93C8153192DE41CFA7F8F8D7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814D2234192FA51600165853 /* PBXTargetDependency */,
+			);
+			name = StalkerTests;
+			productName = StalkerTests;
+			productReference = 814D222E192FA51600165853 /* StalkerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		814D220B192FA51600165853 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = BendingSpoons;
+				TargetAttributes = {
+					814D222D192FA51600165853 = {
+						TestTargetID = 814D2212192FA51600165853;
+					};
+				};
+			};
+			buildConfigurationList = 814D220E192FA51600165853 /* Build configuration list for PBXProject "Stalker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 814D220A192FA51600165853;
+			productRefGroup = 814D2214192FA51600165853 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				814D2212192FA51600165853 /* Stalker */,
+				814D222D192FA51600165853 /* StalkerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		814D2211192FA51600165853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814D224D192FA5F500165853 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814D222C192FA51600165853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DAE0660B1464F378EAFD20F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93C8153192DE41CFA7F8F8D7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-StalkerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1DC71C4FC8D49A297705ABE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A6403C0AFF451696E42D3A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		814D220F192FA51600165853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814D224E192FA5F500165853 /* main.m in Sources */,
+				814D224C192FA5F500165853 /* BPAppDelegate.m in Sources */,
+				814D225C192FBF2D00165853 /* NSObject+BPStalker.m in Sources */,
+				814D2259192FA86500165853 /* BPStalker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814D222A192FA51600165853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814D2256192FA6C800165853 /* StalkerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		814D2234192FA51600165853 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814D2212192FA51600165853 /* Stalker */;
+			targetProxy = 814D2233192FA51600165853 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		814D223D192FA51600165853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		814D223E192FA51600165853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		814D2240192FA51600165853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5DF51F498714AE4A6E38C8C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Stalker-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Stalker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		814D2241192FA51600165853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5DF51F498714AE4A6E38C8C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Stalker-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Stalker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		814D2243192FA51600165853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28EBD0A2F1BB4B6FA174DDED /* Pods-StalkerTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stalker.app/Stalker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Stalker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Specs/StalkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		814D2244192FA51600165853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28EBD0A2F1BB4B6FA174DDED /* Pods-StalkerTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stalker.app/Stalker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Stalker-Prefix.pch";
+				INFOPLIST_FILE = "Specs/StalkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		814D220E192FA51600165853 /* Build configuration list for PBXProject "Stalker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814D223D192FA51600165853 /* Debug */,
+				814D223E192FA51600165853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814D223F192FA51600165853 /* Build configuration list for PBXNativeTarget "Stalker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814D2240192FA51600165853 /* Debug */,
+				814D2241192FA51600165853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814D2242192FA51600165853 /* Build configuration list for PBXNativeTarget "StalkerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814D2243192FA51600165853 /* Debug */,
+				814D2244192FA51600165853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 814D220B192FA51600165853 /* Project object */;
+}
