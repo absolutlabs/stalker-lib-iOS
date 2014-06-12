@@ -160,6 +160,12 @@
 }
 
 
+-(void)setNotificationCenter:(NSNotificationCenter *)notificationCenter
+{
+    NSAssert(!self.notificationCenterObservers.count, @"notication center can't be changed after being used");
+    _notificationCenter = notificationCenter;
+}
+
 -(void)whenPath:(NSString*)path changeForObject:(id)object options:(NSKeyValueObservingOptions)options then:(BPStalkerKVONotificationBlock)block
 {
 
