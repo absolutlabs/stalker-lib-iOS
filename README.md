@@ -1,7 +1,7 @@
 Stalker
 ========
 
-Heavily inspired by [KVOController](https://github.com/facebook/KVOController), Stalker offers a developer-friendly, block-based interface to KVO and NSNotification​.
+Heavily inspired by [KVOController](https://github.com/facebook/KVOController), Stalker offers a developer-friendly, block-based interface to KVO and `NSNotification`.
 
 
 How to use it
