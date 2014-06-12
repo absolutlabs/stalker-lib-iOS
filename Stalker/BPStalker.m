@@ -139,6 +139,8 @@
 @property (atomic, weak) id target;
 @property (nonatomic,strong) NSMapTable *KVOStalkingsMap;
 @property (nonatomic) OSSpinLock lock;
+@property (nonatomic) NSMutableArray *notificationCenterObservers;
+
 @end
 
 @implementation BPStalker
@@ -148,6 +150,7 @@
     self = [super init];
     if (self) {
         self.notificationCenter = [NSNotificationCenter defaultCenter];
+        self.notificationCenterObservers = [@[] mutableCopy];
         
         NSPointerFunctionsOptions keyOptions = NSPointerFunctionsStrongMemory|NSPointerFunctionsObjectPointerPersonality;
         self.KVOStalkingsMap = [[NSMapTable alloc] initWithKeyOptions:keyOptions valueOptions:NSPointerFunctionsStrongMemory|NSPointerFunctionsObjectPersonality capacity:0];
@@ -187,11 +190,16 @@
     NSParameterAssert(notification);
     NSParameterAssert(block);
 
-    [self.notificationCenter addObserverForName:notification object:nil queue:[NSOperationQueue mainQueue] usingBlock:block];
+    id observer = [self.notificationCenter addObserverForName:notification object:nil queue:[NSOperationQueue mainQueue] usingBlock:block];
+    
+    [self.notificationCenterObservers addObject:observer];
 }
 
 -(void)unobserveAll
 {
+    for (id observer in self.notificationCenterObservers)
+        [self.notificationCenter removeObserver:observer];
+    
     [self.notificationCenter removeObserver:self];
     
     OSSpinLockLock(&_lock);
