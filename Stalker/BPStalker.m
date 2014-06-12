@@ -147,7 +147,7 @@
 {
     self = [super init];
     if (self) {
-        self.notificationCenter = [[NSNotificationCenter alloc] init];
+        self.notificationCenter = [NSNotificationCenter defaultCenter];
         
         NSPointerFunctionsOptions keyOptions = NSPointerFunctionsStrongMemory|NSPointerFunctionsObjectPointerPersonality;
         self.KVOStalkingsMap = [[NSMapTable alloc] initWithKeyOptions:keyOptions valueOptions:NSPointerFunctionsStrongMemory|NSPointerFunctionsObjectPersonality capacity:0];
