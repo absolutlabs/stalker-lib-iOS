@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Stalker"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "Stalker is a developer friendly KVO and NSNotification​ interface"
   s.homepage     = "http://github.com/BendingSpoons/Stalker"
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
