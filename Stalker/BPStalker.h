@@ -14,7 +14,16 @@ typedef void (^BPStalkerNotificationBlock)(NSNotification *notification);
 @interface BPStalker : NSObject
 @property (nonatomic, strong) NSNotificationCenter* notificationCenter;
 
--(void)whenPath:(NSString*)path changeForObject:(id)object options:(NSKeyValueObservingOptions)options then:(BPStalkerKVONotificationBlock)block;
+-(void)whenPath:(NSString*)path
+changeForObject:(id)object
+        options:(NSKeyValueObservingOptions)options
+  dispatchQueue:(dispatch_queue_t)dispatchQueue
+           then:(BPStalkerKVONotificationBlock)block;
+
+-(void)whenPath:(NSString*)path
+changeForObject:(id)object
+        options:(NSKeyValueObservingOptions)options
+           then:(BPStalkerKVONotificationBlock)block;
 
 -(void)when:(NSString*)notification then:(BPStalkerNotificationBlock)block;
 

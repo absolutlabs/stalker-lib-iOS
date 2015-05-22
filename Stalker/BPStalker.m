@@ -17,6 +17,7 @@
 @property (nonatomic, weak) BPStalker *stalker;
 @property (nonatomic) NSString *keyPath;
 @property (nonatomic) NSKeyValueObservingOptions options;
+@property (nonatomic) dispatch_queue_t dispatchQueue;
 @property (nonatomic,strong) BPStalkerKVONotificationBlock block;
 @end
 
@@ -24,6 +25,7 @@
 - (instancetype)initWithStalker:(BPStalker *)stalker
                         keyPath:(NSString *)keyPath
                         options:(NSKeyValueObservingOptions)options
+                  dispatchQueue:(dispatch_queue_t)dispatchQueue
                           block:(BPStalkerKVONotificationBlock)block
 {
     self = [super init];
@@ -32,6 +34,7 @@
         self.keyPath = [keyPath copy];
         self.options = options;
         self.block = [block copy];
+        self.dispatchQueue = dispatchQueue;
     }
     
     return self;
@@ -126,8 +129,16 @@
 
     BPStalker *stalker = KVOStalking.stalker;
 
-    if (stalker && KVOStalking.block)
-        KVOStalking.block(object, change);
+    if (stalker && KVOStalking.block) {
+
+        if (KVOStalking.dispatchQueue) {
+            dispatch_async(KVOStalking.dispatchQueue, ^{
+                KVOStalking.block(object, change);
+            });
+        } else {
+            KVOStalking.block(object, change);
+        }
+    }
 }
 
 @end
@@ -166,14 +177,36 @@
     _notificationCenter = notificationCenter;
 }
 
--(void)whenPath:(NSString*)path changeForObject:(id)object options:(NSKeyValueObservingOptions)options then:(BPStalkerKVONotificationBlock)block
-{
 
+-(void)whenPath:(NSString*)path
+changeForObject:(id)object
+        options:(NSKeyValueObservingOptions)options
+           then:(BPStalkerKVONotificationBlock)block
+{
+    
+    [self whenPath:path
+   changeForObject:object
+           options:options
+     dispatchQueue:nil
+              then:block];
+}
+
+-(void)whenPath:(NSString*)path
+changeForObject:(id)object
+        options:(NSKeyValueObservingOptions)options
+  dispatchQueue:(dispatch_queue_t)dispatchQueue
+           then:(BPStalkerKVONotificationBlock)block;
+{
+    
     NSParameterAssert(path.hash);
     NSParameterAssert(block);
     NSParameterAssert(object);
     
-    BPKVOStalking *stalking = [[BPKVOStalking alloc] initWithStalker:self keyPath:path options:options block:block];
+    BPKVOStalking *stalking = [[BPKVOStalking alloc] initWithStalker:self
+                                                             keyPath:path
+                                                             options:options
+                                                       dispatchQueue:dispatchQueue
+                                                               block:block];
     OSSpinLockLock(&_lock);
     
     NSMutableSet *stalkingsForObject = [self.KVOStalkingsMap objectForKey:object];
