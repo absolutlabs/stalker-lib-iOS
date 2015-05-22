@@ -1,8 +1,8 @@
 PODS:
   - Expecta (0.2.4)
-  - libextobjc/EXTScope (0.4):
+  - libextobjc/EXTScope (0.4.1):
     - libextobjc/RuntimeExtensions
-  - libextobjc/RuntimeExtensions (0.4)
+  - libextobjc/RuntimeExtensions (0.4.1)
   - Specta (0.2.1)
 
 DEPENDENCIES:
@@ -11,8 +11,8 @@ DEPENDENCIES:
   - Specta (~> 0.2.1)
 
 SPEC CHECKSUMS:
-  Expecta: 112bcafa2304ee0f3c5e586505f24555a47b25d5
-  libextobjc: ba42e4111f433273a886cd54f0ddaddb7f62f82f
-  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+  Expecta: cfaf1d3e2e194ca704a25e997093d30a1ce70b61
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.36.4

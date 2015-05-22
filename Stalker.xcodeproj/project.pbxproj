@@ -34,9 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		28EBD0A2F1BB4B6FA174DDED /* Pods-StalkerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StalkerTests.xcconfig"; path = "Pods/Pods-StalkerTests.xcconfig"; sourceTree = "<group>"; };
+		1B3F6715A0342EB2496B2B80 /* Pods-StalkerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StalkerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StalkerTests/Pods-StalkerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		47530370F26E4F8B9EEC4887 /* libPods-StalkerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StalkerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A30FF60B814D55A86AF036 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		71797CE4F08A92B308167E02 /* Pods-StalkerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StalkerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StalkerTests/Pods-StalkerTests.release.xcconfig"; sourceTree = "<group>"; };
 		814D2213192FA51600165853 /* Stalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		814D2216192FA51600165853 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		814D2218192FA51600165853 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,7 +56,8 @@
 		814D2258192FA86500165853 /* BPStalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPStalker.m; sourceTree = "<group>"; };
 		814D225A192FBF2D00165853 /* NSObject+BPStalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BPStalker.h"; sourceTree = "<group>"; };
 		814D225B192FBF2D00165853 /* NSObject+BPStalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BPStalker.m"; sourceTree = "<group>"; };
-		A5DF51F498714AE4A6E38C8C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A77803EB402CC046CACE64F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B10556DBE82DE812DA4E2B7A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,7 @@
 				814D2245192FA5F500165853 /* Demo */,
 				814D2215192FA51600165853 /* Frameworks */,
 				814D2214192FA51600165853 /* Products */,
-				A5DF51F498714AE4A6E38C8C /* Pods.xcconfig */,
-				28EBD0A2F1BB4B6FA174DDED /* Pods-StalkerTests.xcconfig */,
+				E027A0EDDBB20DF1E56C0855 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +151,17 @@
 				814D2253192FA6B900165853 /* StalkerTests.m */,
 			);
 			path = Specs;
+			sourceTree = "<group>";
+		};
+		E027A0EDDBB20DF1E56C0855 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B10556DBE82DE812DA4E2B7A /* Pods.debug.xcconfig */,
+				A77803EB402CC046CACE64F2 /* Pods.release.xcconfig */,
+				1B3F6715A0342EB2496B2B80 /* Pods-StalkerTests.debug.xcconfig */,
+				71797CE4F08A92B308167E02 /* Pods-StalkerTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-StalkerTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StalkerTests/Pods-StalkerTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A1DC71C4FC8D49A297705ABE /* Copy Pods Resources */ = {
@@ -288,7 +300,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7A6403C0AFF451696E42D3A /* Check Pods Manifest.lock */ = {
@@ -411,7 +423,7 @@
 		};
 		814D2240192FA51600165853 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5DF51F498714AE4A6E38C8C /* Pods.xcconfig */;
+			baseConfigurationReference = B10556DBE82DE812DA4E2B7A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -425,7 +437,7 @@
 		};
 		814D2241192FA51600165853 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5DF51F498714AE4A6E38C8C /* Pods.xcconfig */;
+			baseConfigurationReference = A77803EB402CC046CACE64F2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -439,7 +451,7 @@
 		};
 		814D2243192FA51600165853 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28EBD0A2F1BB4B6FA174DDED /* Pods-StalkerTests.xcconfig */;
+			baseConfigurationReference = 1B3F6715A0342EB2496B2B80 /* Pods-StalkerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stalker.app/Stalker";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -462,7 +474,7 @@
 		};
 		814D2244192FA51600165853 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28EBD0A2F1BB4B6FA174DDED /* Pods-StalkerTests.xcconfig */;
+			baseConfigurationReference = 71797CE4F08A92B308167E02 /* Pods-StalkerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stalker.app/Stalker";
 				FRAMEWORK_SEARCH_PATHS = (
