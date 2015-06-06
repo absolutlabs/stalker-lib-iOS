@@ -29,7 +29,7 @@ How to use it
 
 note that:
 - You don't need to unobserve. it's automagically done when the object is deallocated
-- You don't need to create an instance of BPStalker, it's already available through the category NSObject+Stalker
+- You don't need to create an instance of `STStalker`, it's already available through the category `NSObject+Stalker`
 
 Contact
 =======
