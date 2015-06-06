@@ -1,32 +1,29 @@
 //
-//  BPStalker.m
 //  Stalker
 //
 //  Created by Luca Querella on 23/05/14.
 //  Copyright (c) 2014 BendingSpoons. All rights reserved.
 //
 
-#import "BPStalker.h"
-#import <libkern/OSAtomic.h>
-#import <objc/message.h>
+@import ObjectiveC;
+@import libkern;
 
-#pragma mark - BPKVOStalking
-
+#import "STStalker.h"
 
 @interface BPKVOStalking : NSObject
-@property (nonatomic, weak) BPStalker *stalker;
+@property (nonatomic, weak) STStalker *stalker;
 @property (nonatomic) NSString *keyPath;
 @property (nonatomic) NSKeyValueObservingOptions options;
 @property (nonatomic) dispatch_queue_t dispatchQueue;
-@property (nonatomic,strong) BPStalkerKVONotificationBlock block;
+@property (nonatomic,strong) STStalkerKVONotificationBlock block;
 @end
 
 @implementation  BPKVOStalking
-- (instancetype)initWithStalker:(BPStalker *)stalker
+- (instancetype)initWithStalker:(STStalker *)stalker
                         keyPath:(NSString *)keyPath
                         options:(NSKeyValueObservingOptions)options
                   dispatchQueue:(dispatch_queue_t)dispatchQueue
-                          block:(BPStalkerKVONotificationBlock)block
+                          block:(STStalkerKVONotificationBlock)block
 {
     self = [super init];
     if (self) {
@@ -127,7 +124,7 @@
         OSSpinLockUnlock(&_lock);
     }
 
-    BPStalker *stalker = KVOStalking.stalker;
+    STStalker *stalker = KVOStalking.stalker;
 
     if (stalker && KVOStalking.block) {
 
@@ -146,7 +143,7 @@
 #pragma mark - BPStalker
 
 
-@interface BPStalker ()
+@interface STStalker ()
 @property (atomic, weak) id target;
 @property (nonatomic,strong) NSMapTable *KVOStalkingsMap;
 @property (nonatomic) OSSpinLock lock;
@@ -154,7 +151,7 @@
 
 @end
 
-@implementation BPStalker
+@implementation STStalker
 
 -(instancetype)init
 {
@@ -181,7 +178,7 @@
 -(void)whenPath:(NSString*)path
 changeForObject:(id)object
         options:(NSKeyValueObservingOptions)options
-           then:(BPStalkerKVONotificationBlock)block
+           then:(STStalkerKVONotificationBlock)block
 {
     
     [self whenPath:path
@@ -195,7 +192,7 @@ changeForObject:(id)object
 changeForObject:(id)object
         options:(NSKeyValueObservingOptions)options
   dispatchQueue:(dispatch_queue_t)dispatchQueue
-           then:(BPStalkerKVONotificationBlock)block;
+           then:(STStalkerKVONotificationBlock)block;
 {
     
     NSParameterAssert(path.hash);
@@ -224,7 +221,7 @@ changeForObject:(id)object
     
 }
 
--(void)when:(NSString*)notification then:(BPStalkerNotificationBlock)block
+-(void)when:(NSString*)notification then:(STStalkerNotificationBlock)block
 {
     NSParameterAssert(notification);
     NSParameterAssert(block);

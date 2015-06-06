@@ -18,8 +18,8 @@
 		814D224D192FA5F500165853 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814D2248192FA5F500165853 /* Images.xcassets */; };
 		814D224E192FA5F500165853 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D2249192FA5F500165853 /* main.m */; };
 		814D2256192FA6C800165853 /* StalkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D2253192FA6B900165853 /* StalkerTests.m */; };
-		814D2259192FA86500165853 /* BPStalker.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D2258192FA86500165853 /* BPStalker.m */; };
-		814D225C192FBF2D00165853 /* NSObject+BPStalker.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D225B192FBF2D00165853 /* NSObject+BPStalker.m */; };
+		814D2259192FA86500165853 /* STStalker.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D2258192FA86500165853 /* STStalker.m */; };
+		814D225C192FBF2D00165853 /* NSObject+Stalker.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D225B192FBF2D00165853 /* NSObject+Stalker.m */; };
 		B04D1EBEA9154D24BDB23C63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A30FF60B814D55A86AF036 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +38,8 @@
 		47530370F26E4F8B9EEC4887 /* libPods-StalkerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StalkerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A30FF60B814D55A86AF036 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		71797CE4F08A92B308167E02 /* Pods-StalkerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StalkerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StalkerTests/Pods-StalkerTests.release.xcconfig"; sourceTree = "<group>"; };
+		8125DC561B233D3B006A5B4E /* NSObject+BPStalker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BPStalker.h"; sourceTree = "<group>"; };
+		8125DC571B233D57006A5B4E /* BPStalker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPStalker.h; sourceTree = "<group>"; };
 		814D2213192FA51600165853 /* Stalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		814D2216192FA51600165853 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		814D2218192FA51600165853 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,10 +54,10 @@
 		814D224B192FA5F500165853 /* Stalker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stalker-Prefix.pch"; sourceTree = "<group>"; };
 		814D2252192FA6B900165853 /* StalkerTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StalkerTests-Info.plist"; sourceTree = "<group>"; };
 		814D2253192FA6B900165853 /* StalkerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StalkerTests.m; sourceTree = "<group>"; };
-		814D2257192FA86500165853 /* BPStalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPStalker.h; sourceTree = "<group>"; };
-		814D2258192FA86500165853 /* BPStalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPStalker.m; sourceTree = "<group>"; };
-		814D225A192FBF2D00165853 /* NSObject+BPStalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BPStalker.h"; sourceTree = "<group>"; };
-		814D225B192FBF2D00165853 /* NSObject+BPStalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BPStalker.m"; sourceTree = "<group>"; };
+		814D2257192FA86500165853 /* STStalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STStalker.h; sourceTree = "<group>"; };
+		814D2258192FA86500165853 /* STStalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STStalker.m; sourceTree = "<group>"; };
+		814D225A192FBF2D00165853 /* NSObject+Stalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Stalker.h"; sourceTree = "<group>"; };
+		814D225B192FBF2D00165853 /* NSObject+Stalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Stalker.m"; sourceTree = "<group>"; };
 		A77803EB402CC046CACE64F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B10556DBE82DE812DA4E2B7A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8125DC551B233BC6006A5B4E /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				8125DC561B233D3B006A5B4E /* NSObject+BPStalker.h */,
+				8125DC571B233D57006A5B4E /* BPStalker.h */,
+			);
+			name = Deprecated;
+			sourceTree = "<group>";
+		};
 		814D220A192FA51600165853 = {
 			isa = PBXGroup;
 			children = (
@@ -136,10 +147,11 @@
 		814D2250192FA67A00165853 /* Stalker */ = {
 			isa = PBXGroup;
 			children = (
-				814D2257192FA86500165853 /* BPStalker.h */,
-				814D2258192FA86500165853 /* BPStalker.m */,
-				814D225A192FBF2D00165853 /* NSObject+BPStalker.h */,
-				814D225B192FBF2D00165853 /* NSObject+BPStalker.m */,
+				8125DC551B233BC6006A5B4E /* Deprecated */,
+				814D2257192FA86500165853 /* STStalker.h */,
+				814D2258192FA86500165853 /* STStalker.m */,
+				814D225A192FBF2D00165853 /* NSObject+Stalker.h */,
+				814D225B192FBF2D00165853 /* NSObject+Stalker.m */,
 			);
 			path = Stalker;
 			sourceTree = "<group>";
@@ -327,8 +339,8 @@
 			files = (
 				814D224E192FA5F500165853 /* main.m in Sources */,
 				814D224C192FA5F500165853 /* BPAppDelegate.m in Sources */,
-				814D225C192FBF2D00165853 /* NSObject+BPStalker.m in Sources */,
-				814D2259192FA86500165853 /* BPStalker.m in Sources */,
+				814D225C192FBF2D00165853 /* NSObject+Stalker.m in Sources */,
+				814D2259192FA86500165853 /* STStalker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

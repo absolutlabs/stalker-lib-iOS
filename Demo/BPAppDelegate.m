@@ -15,9 +15,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UIViewController alloc] init];
-    self.window.rootViewController.view.backgroundColor = [UIColor redColor];
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.rootViewController = UIViewController.new;
+    self.window.rootViewController.view.backgroundColor = UIColor.redColor;
     [self.window makeKeyAndVisible];
 
     return YES;
