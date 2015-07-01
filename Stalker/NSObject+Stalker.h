@@ -10,6 +10,6 @@
 #import "STStalker.h"
 
 @interface NSObject (Stalker)
-@property (nonatomic,strong,readonly) STStalker *stalker;
+@property(nonatomic, strong, readonly) STStalker *stalker;
 
 @end

@@ -11,14 +11,14 @@
 
 @implementation NSObject (Stalker)
 
--(STStalker *)stalker
+- (STStalker *)stalker
 {
-    id stalker =  objc_getAssociatedObject(self, @selector(stalker));
+    id stalker = objc_getAssociatedObject(self, @selector(stalker));
     if (!stalker) {
         stalker = [[STStalker alloc] init];
         objc_setAssociatedObject(self, @selector(stalker), stalker, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    
+
     return stalker;
 }
 
