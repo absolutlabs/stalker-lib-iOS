@@ -38,6 +38,7 @@
 		47530370F26E4F8B9EEC4887 /* libPods-StalkerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StalkerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A30FF60B814D55A86AF036 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		71797CE4F08A92B308167E02 /* Pods-StalkerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StalkerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StalkerTests/Pods-StalkerTests.release.xcconfig"; sourceTree = "<group>"; };
+		811691001B4475C300645C5B /* Stalker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stalker.h; sourceTree = "<group>"; };
 		8125DC561B233D3B006A5B4E /* NSObject+BPStalker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BPStalker.h"; sourceTree = "<group>"; };
 		8125DC571B233D57006A5B4E /* BPStalker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPStalker.h; sourceTree = "<group>"; };
 		814D2213192FA51600165853 /* Stalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				8125DC551B233BC6006A5B4E /* Deprecated */,
+				811691001B4475C300645C5B /* Stalker.h */,
 				814D2257192FA86500165853 /* STStalker.h */,
 				814D2258192FA86500165853 /* STStalker.m */,
 				814D225A192FBF2D00165853 /* NSObject+Stalker.h */,
