@@ -120,14 +120,15 @@
     }
 
     STStalker *stalker = KVOStalking.stalker;
+    NSDictionary *copyOfChange = change.copy;
 
     if (stalker && KVOStalking.block) {
         if (KVOStalking.dispatchQueue) {
             dispatch_async(KVOStalking.dispatchQueue, ^{
-              KVOStalking.block(object, change);
+              KVOStalking.block(object, copyOfChange);
             });
         } else {
-            KVOStalking.block(object, change);
+            KVOStalking.block(object, copyOfChange);
         }
     }
 }
