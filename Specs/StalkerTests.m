@@ -11,6 +11,14 @@
 #import "Specta.h"
 #import "NSObject+BPStalker.h"
 
+@interface NSObjectWithProperties : NSObject
+@property (nonatomic) NSString *propertyA;
+@property (nonatomic) NSString *propertyB;
+@end
+
+@implementation NSObjectWithProperties
+@end
+
 SpecBegin(Stalker)
 
     describe(@"objectWithStalker", ^{
@@ -135,6 +143,38 @@ SpecBegin(Stalker)
         expect(blockCalled).to.equal(1);
 
       });
+        
+        
+        it(@"shoud be able to observer its properties", ^{
+            
+            __block NSInteger blockCalled = 0;
+            __weak id weakObjectWithStalker = nil;
+            
+            @autoreleasepool
+            {
+                NSObjectWithProperties *objectWithStalker = NSObjectWithProperties.new;
+                
+                [objectWithStalker.stalker whenPath:@"propertyA"
+                                    changeForObject:objectWithStalker
+                                            options:(NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew |
+                                                     NSKeyValueObservingOptionOld)
+                                               then:^(NSMutableDictionary *object, NSDictionary *change) {
+                                                   
+                                                   blockCalled++;
+                                               }];
+                
+                expect(blockCalled).to.equal(1);
+                objectWithStalker.propertyA = @"yo";
+                expect(blockCalled).to.equal(2);
+                
+                weakObjectWithStalker = objectWithStalker;
+                expect(weakObjectWithStalker).notTo.beNil();
+
+            }
+            
+            expect(weakObjectWithStalker).to.beNil();
+            
+        });
 
     });
 
